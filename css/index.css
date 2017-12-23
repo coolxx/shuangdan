@@ -66,7 +66,7 @@ header p{
     background-size: 17.5rem;
     position: relative;
 }
-.m1-cont b{
+.m1-cont > b{
     display: block;
     width: 4.6rem;
     height: 1.5rem;
@@ -332,7 +332,6 @@ header p{
 }
 .zg-main3 p{
     font-size:0;
-    overflow: hidden;
 }
 .zg-main3 p span{
     font-size:1.55rem;
@@ -347,6 +346,17 @@ header p{
 }
 .zg-main3 p:nth-child(1) span{
     font-size:1.15rem;
+}
+.zg-main3 p:nth-child(1) span:last-child{
+    width: 1.25rem;
+    height: 1.25rem;
+    background: #e0242f;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 0.9rem;
+    text-align: center;
+    line-height: 1.25rem;
+    margin-left: 0.25rem
 }
 .zg-main3 p:nth-child(2){
     margin-left:2.35rem;
