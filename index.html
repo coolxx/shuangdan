@@ -710,10 +710,9 @@
     Obj.prototype.draw=function(o){
         var speed=0;   //雪花每次下落的数值
         var startPosLeft=Math.ceil(Math.random()*18);//设置雪花随机的开始x值的大小
-        o.style.opacity=Math.random();  //设置透明度
         o.style.left=startPosLeft+'rem';
         o.style.color="#fff";
-        o.style.fontSize='0.45rem';
+        o.style.fontSize=Math.random()+'rem';
         setInterval(function(){
             if(speed<15){
                 o.style.top=speed+'rem';
@@ -725,7 +724,7 @@
         },30);
     }
     var flame=document.getElementById('flame');
-    /*使用setInterval定时器每1000毫秒创建一个雪花*/
+    /*使用setInterval定时器每800毫秒创建一个雪花*/
     setInterval(function(){
         var odiv=document.createElement('div');
         odiv.innerHTML="✽";
@@ -734,7 +733,7 @@
         flame.appendChild(odiv);
         var obj=new Obj();   //创建函数
         obj.draw(odiv);  //执行obj的draw方法
-    },1000);
+    },800);
 </script>
 
 </body>
