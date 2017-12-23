@@ -724,7 +724,7 @@
         },30);
     }
     var flame=document.getElementById('flame');
-    /*使用setInterval定时器每800毫秒创建一个雪花*/
+    /*使用setInterval定时器每1000毫秒创建一个雪花*/
     setInterval(function(){
         var odiv=document.createElement('div');
         odiv.innerHTML="✽";
@@ -733,7 +733,7 @@
         flame.appendChild(odiv);
         var obj=new Obj();   //创建函数
         obj.draw(odiv);  //执行obj的draw方法
-    },200);
+    },1000);
 </script>
 
 </body>
